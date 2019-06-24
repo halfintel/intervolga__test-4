@@ -1,0 +1,146 @@
+/*
+	стили
+*/
+
+/* ----- body ----- */
+body {
+	font-family: sans-serif;
+}
+section {
+	padding: 30px 0;
+}
+/* ----- /body ----- */
+
+/* ----- header ----- */
+header {
+	padding: 30px 0;
+}
+.header__logo {
+
+}
+.header__logoLink {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.5);
+}
+.header__ol {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.header__a {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: black;
+	padding: 5px;
+}
+@media (min-width: 992px){
+	.header__logo {
+		justify-content: flex-start;
+	}
+	.header__ol {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+/* ----- /header ----- */
+
+/* ----- section 1 ----- */
+.sect1__h2 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	color: rgba(0,0,0,0.7);
+}
+.sect1__p {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left;
+	color: rgba(0,0,0,0.7);
+	max-width: 70%;
+	margin-top: 10px;
+}
+
+@media (min-width: 992px){
+	.sect1__h2 {
+		text-align: center;
+	}
+	.sect1__p {
+		text-align: center;
+		margin: auto;
+		margin-top: 20px;
+	}
+}
+/* ----- /section 1 ----- */
+
+/* ----- form ----- */
+.form__wrap {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.form__input {
+	border: 1px solid black;
+	width: 200px;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border-radius: 2px;
+}
+.form__button {
+	background-color: #ee0;
+	width: 200px;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: sans-serif;
+}
+.form__button:hover {
+	background-color: #ff0;
+}
+.form__button:active {
+	background-color: #dd0;
+}
+
+@media (min-width: 992px){
+	.form__wrap {
+		margin-top: 20px;
+	}
+}
+/* ----- /form ----- */
+
+/* ----- table ----- */
+.table__th {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 5px 10px;
+	text-align: left;
+}
+.table__td {
+	font-size: 20px;
+	padding: 5px 10px;
+	text-align: left;
+}
+.table__td-right {
+	text-align: right;
+}
+/* ----- /table ----- */
+
+/* ----- other ----- */
+.hidden {
+	display: none;
+}
+.ajax {
+	margin-top: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+/* ----- /other ----- */
